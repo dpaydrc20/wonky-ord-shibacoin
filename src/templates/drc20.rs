@@ -3,7 +3,7 @@ use super::*;
 #[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "snake_case")]
 pub enum PType {
-  #[serde(rename = "prc-20")]
+  #[serde(rename = "shc-20")]
   Drc20,
 }
 
