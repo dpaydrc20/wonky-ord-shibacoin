@@ -5,8 +5,8 @@ services:
       - .env
     environment:
       - RUST_LOG=${RUST_LOG:-info}
-      #- FIRST_INSCRIPTION_HEIGHT=34237
-      #- FIRST_DUNE_HEIGHT=34237
+      #- FIRST_INSCRIPTION_HEIGHT=0
+      #- FIRST_DUNE_HEIGHT=0
     tty: false
     restart: "always"
     # for the indexer to be able to connect to the local dogecoin node we use the host network
