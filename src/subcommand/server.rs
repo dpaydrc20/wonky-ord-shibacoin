@@ -309,14 +309,14 @@ impl Server {
           "/inscriptions/balance/:address/:page",
           get(Self::inscriptions_by_address),
         )
-        .route("/prc20/tick/:tick", get(Self::drc20_tick_info))
-        .route("/prc20/tick", get(Self::drc20_all_tick_info))
+        .route("/shc20/tick/:tick", get(Self::drc20_tick_info))
+        .route("/shc20/tick", get(Self::drc20_all_tick_info))
         .route(
-          "/prc20/tick/:tick/address/:address/balance",
+          "/shc20/tick/:tick/address/:address/balance",
           get(Self::drc20_balance),
         )
         .route(
-          "/prc20/address/:address/balance",
+          "/shc20/address/:address/balance",
           get(Self::drc20_all_balance),
         )
         .route("/dunes_on_outputs", get(Self::dunes_by_outputs))
