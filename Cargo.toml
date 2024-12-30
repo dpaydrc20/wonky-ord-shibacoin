@@ -1,12 +1,12 @@
 [package]
-name = "wonky-ord-pepecoin"
-description = "◉ Pepinal wallet and block explorer for pepecoin"
+name = "wonky-ord-shibainucoin"
+description = "◉ Shicinal wallet and block explorer for shibainucoin"
 version = "0.5.1"
 license = "CC0-1.0"
 edition = "2021"
 autotests = false
-homepage = "https://github.com/PepeEnthusiast/wonky-ord-pepecoin"
-repository = "https://github.com/PepeEnthusiast/wonky-ord-pepecoin"
+homepage = "https://github.com/dpaydrc20/wonky-ord-shibainucoin"
+repository = "https://github.com/dpaydrc20/wonky-ord-shibainucoin"
 autobins = false
 rust-version = "1.67"
 
@@ -89,5 +89,5 @@ path = "tests/lib.rs"
 pulldown-cmark = "0.9.2"
 
 [patch.crates-io]
-bitcoin = { git = "https://github.com/PepeEnthusiast/rust-pepecoin" }
-bitcoincore-rpc = { git = "https://github.com/PepeEnthusiast/rust-pepecoincore-rpc" }
+bitcoin = { git = "https://github.com/dpaydrc20/rust-shibainucoin" }
+bitcoincore-rpc = { git = "https://github.com/PepeEnthusiast/rust-shibainucoincore-rpc" }
