@@ -19,7 +19,7 @@ pub(crate) fn run(options: Options) -> SubcommandResult {
     Chain::Mainnet => "http://localhost/inscription/",
     Chain::Regtest => "http://localhost/inscription/",
     Chain::Signet => "https://localhost/inscription/",
-    Chain::Testnet => "http://localhost/inscription/"",
+    Chain::Testnet => "http://localhost/inscription/", // Removed extra quote here
   };
 
   let mut output = Vec::new();
@@ -29,7 +29,7 @@ pub(crate) fn run(options: Options) -> SubcommandResult {
       output.push(Output {
         location,
         inscription,
-        explorer: format!("{explorer}{inscription}"),
+        explorer: format!("{}{}", explorer, inscription), // Corrected format string
       });
     }
   }
