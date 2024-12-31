@@ -1,3 +1,6 @@
+UNDER DEVELOPEMENT Still needs work on balances for tokens! 
+
+
 To set up and run the `wonky-ord-shibainucoin` and `shibacoin` repositories, follow these detailed instructions:
 
 ---
