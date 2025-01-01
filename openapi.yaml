@@ -4,9 +4,9 @@ info:
   description: API for getting transactions, blocks, balances, inscriptions, and dune info on Dogecoin.
   version: 1.0.0
 servers:
-  - url: http://localhost:8080
+  - url: http://localhost:8666
     description: Local development server
-  - url: https://wonky-ord.dogeord.io
+  - url: https://shicinals-ord.com
     description: Wonky Prod Server
 
 paths:
@@ -181,10 +181,10 @@ paths:
                   total_inscription_shibes:
                     type: integer
 
-  /drc20/balance/{address}:
+  /shc20/balance/{address}:
     get:
-      summary: Get DRC20 balance for an address
-      operationId: getDrc20Balance
+      summary: Get SHC20 balance for an address
+      operationId: getShc20Balance
       parameters:
         - name: address
           in: path
@@ -223,10 +223,10 @@ paths:
                     items:
                       type: object
 
-  /drc20/tick/{tick}:
+  /shc20/tick/{tick}:
     get:
-      summary: Get DRC20 tick information
-      operationId: getDrc20TickInfo
+      summary: Get SHC20 tick information
+      operationId: getShc20TickInfo
       parameters:
         - name: tick
           in: path
@@ -242,10 +242,10 @@ paths:
               schema:
                 type: object
 
-  /drc20/tick:
+  /shc20/tick:
     get:
-      summary: Get all DRC20 tick information
-      operationId: getAllDrc20TickInfo
+      summary: Get all SHC20 tick information
+      operationId: getAllShc20TickInfo
       responses:
         '200':
           description: DRC20 tick information
@@ -256,10 +256,10 @@ paths:
                 items:
                   type: object
 
-  /drc20/validate:
+  /shc20/validate:
     get:
-      summary: Validate DRC20 inscriptions
-      operationId: validateDrc20
+      summary: Validate SHC20 inscriptions
+      operationId: validateShc20
       parameters:
         - name: addresses
           in: query
