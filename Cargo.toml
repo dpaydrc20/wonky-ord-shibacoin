@@ -9,7 +9,7 @@ homepage = "https://github.com/dpaydrc20/wonky-ord-shibainucoin"
 repository = "https://github.com/dpaydrc20/wonky-ord-shibainucoin"
 autobins = false
 rust-version = "1.67"
-
+ 
 [workspace]
 members = [".", "test-bitcoincore-rpc"]
 
